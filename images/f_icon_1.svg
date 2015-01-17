@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="97px" height="97px" viewBox="0 0 97 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 18 + Edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="FEATURES" sketch:type="MSLayerGroup" transform="translate(-418.000000, -341.000000)" stroke="#FF3A32">
+            <g id="Icons" transform="translate(419.000000, 342.000000)" sketch:type="MSShapeGroup">
+                <g id="Oval-18-+-Edit">
+                    <circle id="Oval-18" stroke-width="1.55737705" cx="47.5" cy="47.5" r="47.5"></circle>
+                    <g id="Edit" transform="translate(24.918033, 23.360656)" stroke-width="2.06321329" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11.6929963,13.9079603 L31.1813236,13.9079603 L31.1813236,33.8550973 L11.6929963,33.8550973 L11.6929963,13.9079603 Z M44.8231526,33.8550973 L38.9766545,33.8550973 L38.9766545,5.92910553 L11.6929963,5.92910553 L11.6929963,-0.0550355701 L3.89766545,-0.0550355701 L3.89766545,5.92910553 L0,5.92910553 L0,13.9079603 L3.89766545,13.9079603 L3.89766545,41.8339521 L31.1813236,41.8339521 L31.1813236,47.8180932 L38.9766545,47.8180932 L38.9766545,41.8339521 L44.8231526,41.8339521 L44.8231526,33.8550973 L44.8231526,33.8550973 Z" id="Stroke-4019"></path>
+                        <path d="M3.68543756,5.92890606 L11.6931912,5.92890606" id="Stroke-4022"></path>
+                        <path d="M3.89766545,13.9077609 L11.6929963,13.9077609" id="Stroke-4023"></path>
+                        <path d="M31.1813236,33.8548978 L38.9766545,33.8548978" id="Stroke-4024"></path>
+                        <path d="M31.1813236,41.8337526 L38.9766545,41.8337526" id="Stroke-4025"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

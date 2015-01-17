@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="71px" viewBox="0 0 50 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Stroke 92 + Stroke 94</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-38.000000, -14.000000)">
+            <g id="Stroke-92-+-Stroke-94" sketch:type="MSLayerGroup" transform="translate(39.000000, 15.000000)">
+                <text id="Top" sketch:type="MSTextLayer" font-family="Arial Rounded MT Bold" font-size="13.6" font-weight="normal" letter-spacing="-0.5" fill="#FF3A32">
+                    <tspan x="13.2413793" y="66.3333333">To</tspan>
+                    <tspan x="28.0991918" y="66.3333333">p</tspan>
+                </text>
+                <path d="M24,48.3333333 C10.7445517,48.3333333 0,37.5133333 0,24.1666667 C0,10.82 10.7445517,0 24,0 C37.2546207,0 48,10.82 48,24.1666667 C48,37.5133333 37.2546207,48.3333333 24,48.3333333 L24,48.3333333 Z" id="Stroke-92" stroke="#FF3A32" stroke-width="2" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M24,41.6666667 C21.7150345,41.6666667 19.862069,39.8008333 19.862069,37.5 L19.862069,19.1666667 L15.3103448,23.75 C14.1674483,24.9008333 12.3153103,24.9008333 11.1724138,23.75 C10.0295172,22.5991667 10.0295172,20.7341667 11.1724138,19.5833333 L24,6.66666667 L36.8275862,19.5833333 C37.9704828,20.7341667 37.9704828,22.5991667 36.8275862,23.75 C35.6846897,24.9008333 33.8325517,24.9008333 32.6896552,23.75 L28.137931,19.1666667 L28.137931,37.5 C28.137931,39.8008333 26.2849655,41.6666667 24,41.6666667 L24,41.6666667 Z" id="Stroke-94" stroke="#FF3A32" stroke-width="2" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

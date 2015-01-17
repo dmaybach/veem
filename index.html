@@ -1,0 +1,916 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Backup Your Voicemails | Visual Voicemail App | Turn Your Voicemail Social &mdash; Veem.it</title>
+
+<meta name="description" content="Veem is the first iOS App that manages your voicemails with Smart Folders – just like you manage your emails!  Veem incorporates Social Media features like Feed, Profile, and Notification.... - Part of the official website for Veem iOS Visual Voicemail App" />
+
+<meta name="keywords" content="Voicemail, call voicemail, vmail, visual voicemail, check voicemail, find voicemail, never lose a voicemail again, saved voicemail, special voicemail, backup your voice mail, Voicemail social, Social Media Voicemail, organize your voicemails, treat your voicemails like email, indiegogo, social media ingiegogo, iphone visual voicemail, ios voicemail app" />
+<meta name="geo.region" content="US-CA" />
+<meta name="geo.placename" content="Santa Monica" />
+<meta name="geo.position" content="34.02799;-118.495155" />
+<meta name="ICBM" content="34.02799, -118.495155" />
+<!--CSS-->
+
+<link rel="stylesheet" href="css/style74.css" />
+<link rel="stylesheet" href="css/swipebox.min.css" />
+
+<!--Favicon--> 
+
+<link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_8bdd611f9a5e_128.png" />
+<link rel="apple-touch-icon" href="http://33.media.tumblr.com/avatar_8bdd611f9a5e_128.png"/>
+
+
+<meta name="viewport" content="width=device-width">
+<meta http-equiv-"X-UA-Compatible" content="IE=edge"/> <!-- NDB - Needed For Video -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+<script>
+	$(document).ready(function(e) {
+		$('html').on('keyup', function(e){
+		   if (e.which == 27) { // if "enter" key is pressed
+			 var e = jQuery.Event("keypress", { keyCode: 27 }); // you can specify your desired key code 
+			 $(".overlay").hide();// or $('#txtb').trigger("keypress")
+		   }
+		})
+		
+		
+		
+        $('.menu ul li a').click(function(){
+			var att = $(this).attr("href");                   
+			$('html, body').animate({
+			  scrollTop: $(att).offset().top - 0
+			}, 700);
+			return false;
+		});
+		
+		/*$(".crsl-item img,.crsl-item2 img").click(function(){
+			var sr = $(this).siblings().attr("src");
+			$(".overlay").show();
+			$(".img").html('<img class="popup_img" src="' + sr + '" />');
+			
+		});*/
+		
+		
+		
+		$(".overlay a").click(function(){
+			$(".overlay").hide();
+		});
+		
+		
+		$("#hemburger_img").click(function(){
+			$(".menu").slideToggle();
+		});
+		$(".sections,.menu ul li a").click(function(){
+			$(".menu").slideUp();
+		});
+		
+		if(($('#features .left').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+				$("#features .left").css("right", 0);
+			}
+			if(($('#features .right').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+				$("#features .right").css("left", 0);
+			}
+		$(window).on("scroll",function(){
+			
+			$("ul.pricing_boxes li .pricing_box").height("auto");
+			var htc = 0;
+			$("ul.pricing_boxes li").each(function(index, element) {
+				var htn = $(this).find(".pricing_box").height();
+				if(htc < htn){
+					htc = htn;	
+				}
+			});
+			$("ul.pricing_boxes li .pricing_box").height(htc);
+			
+			if(($('#pricing').offset().top - $(window).scrollTop()) < 0){
+				var ltp = $('#pricing').offset().top + 30;
+				var htp = $('#pricing').offset().top + 22;
+				$(".logo").css({"position":"absolute","top":ltp });
+				$(".hamburger").css({"position":"absolute","top":htp });
+			}
+			else{
+				$(".logo").css({"position":"fixed","top":30 });
+				$(".hamburger").css({"position":"fixed","top":22 });
+			}
+			
+			
+			if($(window).scrollTop() > 10){
+				$(".go_top").fadeIn();
+			}
+			else{
+				$(".go_top").fadeOut();
+			}
+			
+			if(($('#v_technologies .left').offset().top - $(window).scrollTop()) < $(window).height() - 100){
+				$("#v_technologies .left").css("right", 0);
+			}
+			if(($('#v_technologies .right').offset().top - $(window).scrollTop()) < $(window).height() - 100){
+				$("#v_technologies .right").css("left", 0);
+			}
+			
+			if(($('#features .left').offset().top - $(window).scrollTop()) < $(window).height() - 100){
+				$("#features .left").css("right", 0);
+			}
+			if(($('#features .right').offset().top - $(window).scrollTop()) < $(window).height() - 100){
+				$('#features .right').css("left", 0);
+			}
+			
+			if(($('#slider1').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+				$('#slider1').css("left",0);
+			}
+			
+			//if(($('.container #ani1').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+			//	$('.container #ani1').css("right",0);
+			//}
+			if(($('.container #ani2').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+				$('.container #ani2').css("left",0);
+			}
+                        if(($('.container #ani3').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+                                $('.container #ani3').css("right",0);
+                        }
+
+
+			
+			if(($('ul.pricing_boxes').offset().top - $(window).scrollTop()) < $(window).height() - 200){
+				$('ul.pricing_boxes li:nth-child(2n)').css("left",0);
+				$('ul.pricing_boxes li:nth-child(2n+1)').css("right",0);
+			}
+			
+		});
+		$(".go_top").click(function(){
+			$('html, body').animate({
+			  scrollTop: $("body").offset().top
+			}, 700);
+			
+		});
+		
+		var htc = 0;
+		$("ul.pricing_boxes li").each(function(index, element) {
+            var htn = $(this).find(".pricing_box").height();
+			if(htc < htn){
+				htc = htn;	
+			}
+        });
+		$("ul.pricing_boxes li .pricing_box").height(htc);
+		$(window).on("resize",function(){
+			$("ul.pricing_boxes li .pricing_box").height("auto");
+			var htc = 0;
+			$("ul.pricing_boxes li").each(function(index, element) {
+				var htn = $(this).find(".pricing_box").height();
+				if(htc < htn){
+					htc = htn;	
+				}
+			});
+			$("ul.pricing_boxes li .pricing_box").height(htc);
+		});
+		
+		
+
+      $( '.swipebox' ).swipebox({hideBarsDelay : 30000});		
+    });
+	
+    /*play starts button animation by DM*/
+
+    $(window).load(function() {
+    $('#playbottom').effect("bounce", {
+        times: 4,
+        distance: 200
+    }, 400).click(function() {
+        $(this).effect("bounce", {
+            times: 4,
+            distance: 200
+        }, 400);
+    });
+})
+/*play starts button animation by DM*/
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55619726-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<?php include_once("analyticstracking.php") ?>
+
+
+<div class="overlay"><div class="overlay_box"><a class="close" href="#">x</a><div class="img"></div></div></div>
+<div class="go_top"><img src="images/go_top.svg" /></div>
+<div class="logo"><img src="images/veem_social_visualvoicemail_logo.svg" /></div>
+<div class="hamburger">
+	<div class="hemburger_content">
+        <img id="hemburger_img" src="images/hamburger.svg" />
+        <div class="menu">
+        	<img src="images/arrow_top.png" />
+            <ul>
+            	<li style="border-radius:6px 6px 0 0;" class="lg_bg"><a href="#top">Top</a></li>
+                <li class="dg_bg"><a href="#features">Features</a></li>
+                <li class="rd_bg"><a href="#v_technologies">Veem Technologies</a></li>
+                <li class="lg_bg"><a href="#screenshots">Screenshots</a></li>
+                <li style="border-radius:0 0 6px 6px;" class="dg_bg"><a href="#pricing">Pricing</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="top" class="sections">
+	<div class="header"></div>
+    <div class="container">
+    	<div class="site-name">
+            <h1>Veem</h1>
+            <h2 class="tagline">A Visual Voicemail App</h2>
+            <!--<p>The easiest way to keep, manage and share your voicemail with your <span>iPhone</span></p>
+       
+        </div>
+        <div class="top_img">
+        	<a href="https://www.indiegogo.com/projects/veem-indiegogo"><img src="images/iphone_top.png" /></a>
+        </div>-->
+        <!--New iPhone Animation Starts-->
+    <div class="animation">
+            <a class="falling_phone" href="https://www.indiegogo.com/projects/veem-indiegogo">
+            <img src="images/falling_phone-phone.png" class="defineHeight">
+         
+        <div class="part falling_phone-phone">
+            <img src="images/falling_phone-phone.png">
+        </div>
+    
+        <div class="part screen">
+            <img src="images/falling_phone-phone.png" class="defineHeight">
+            <div class="part falling_phone-play">
+                <img src="images/falling_phone-play.png" alt="">
+            </div>
+        </div>
+     </div>
+    </div>
+        <!--New iPhone Animation Ends-->
+
+        <a href="https://www.indiegogo.com/projects/veem-indiegogo"><img src="images/get_veem.png" style="float:left;width: 45%;margin: -20px 200pm 0 30px;" /></a>
+
+        <div class="fr bottom_img" style="width:30%;">
+           	<a href="https://www.indiegogo.com/projects/veem-indiegogo"><img src="images/indiegogo.png" alt="Find Veem on Indiegogo" /></a>
+        </div>
+        <div class="space30"></div>
+    </div>
+</div>
+<div id="features" class="sections">
+	<div class="header">
+    	<h1>Veem | Visual Voicemail | Features</h1>
+        <img src="images/arrow_bottom.svg" />
+    </div>
+    <div class="space50"></div>
+    <div class="container">
+        <div class="left">
+            <ul class="feature_list">
+                <li>
+                	<div class="right">
+                        <img src="images/f_icon_1.svg" />
+                    </div>
+                    <div class="left">
+                        <h3>EDIT</h3>
+                        <p>Easily trim or bleep content in your voicemails.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                	<div class="right">
+                        <img src="images/f_icon_2.svg" />
+                    </div>
+                    <div class="left">
+                        <h3>SEARCH</h3>
+                        <p>Quickly locate messages in your library through key word and folder search </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                	<div class="right">
+                        <img src="images/f_icon_3.svg" />
+                    </div>
+                    <div class="left">
+                        <h3>FEED</h3>
+                        <p>Follow other users and hear their latest shared messages.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- NDB - BEGIN VIDEO -->
+        <div class="middle" style="text-align:center;">
+          <div id="videoWrapper">
+          <video id="video" style="width:100%; height:auto;" poster="videos/animation_wo_bar.png" autoplay loop>
+            <source src="videos/animation_wo_bar.mp4" type="video/mp4" />
+            <source src="videos/animation_wo_bar.webm" type="video/webm" />
+            <source src="videos/animation_wo_bar.ogv" type="video/ogg" />
+          </video>
+          </div>
+
+          <script type="text/javascript">
+            var video = document.getElementById('video');
+            video.addEventListener('click',function(){
+              video.play();
+            },false);
+          </script>
+        </div>
+        <!-- NDB - END VIDEO -->
+        <div class="left right">
+            <ul class="feature_list">
+                <li>
+                	<div class="right">
+                        <img src="images/f_icon_4.svg" />
+                    </div>
+                    <div class="left">
+                        <h3>SHARE</h3>
+                        <p>Easily share your messages across<br />
+                           veem and other social platforms or <br />
+                           send one privately to one of your contacts. </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                	<div class="right">
+                        <img src="images/f_icon_5.svg" />
+                    </div>
+                    <div class="left">
+                        <h3>FOLDERS</h3>
+                        <p>Organize your voicemails by family, friends, work and custom categories. </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                	<div class="right">
+                        <img src="images/f_icon_6.svg" />
+                    </div>
+                    <div class="left">
+                        <h3>PROFILE</h3>
+                        <p>Join the conversation with a public profile. Follow those of interest to create your own feed. </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="space30"></div>
+     </div>
+</div>
+<div id="v_technologies" class="sections">
+	<div class="header">
+    	<h1>Veem | Visual Voicemail | Technology </h1>
+        <img src="images/arrow_bottom.svg" />
+    </div>
+    <div class="space60"></div>
+    <div class="container60">
+        <div class="left">
+            <img src="images/v_technology_img.png" />
+        </div>
+        <div class="right">
+            <h3>Unlike any other voicemail app</h3>
+            <p>Never be forced to delete a message again. Veem automatically backs up your voicemail for you by connecting with your phone carrier.  Save, organize and share your messages with Veem. All you need to get started is</p>
+            <ul>
+                <li><img src="images/checkmark.svg" /><p>Your cell phone carrier name</p></li>
+                <li><img src="images/checkmark.svg" /><p>Passcode to your voicemails (usually a 4 digit code)</p></li>
+                <li><img src="images/checkmark.svg" /><p>Your cell # and vio-la!</p></li>
+            </ul>
+        </div>
+    	<div class="space30"></div>
+    </div>
+</div>
+<div id="screenshots" class="sections">
+	<div class="header">
+    	<h1>Veem | Visual Voicemail | Screenshots</h1>
+        <img src="images/arrow_bottom.svg" />
+    </div>
+    <div class="container">
+    	<h2 class="section_title">Veem Inbox and Control Menu</h2>
+        <div style="width:75%;margin:auto;">
+    	<div id="slider1" class="crsl-items" data-navigation="navbtns2">
+          <div class="crsl-wrap">
+            <div class="crsl-item">
+                <a href="images/veem-iphone-visual-voicemail-menu.png" title="Side Menu" rel="gallery1" class="swipebox"><img src="images/g11.png" alt="Veem Visual Voicemail Menu"></a>
+            </div><!-- post #1 -->
+            
+            <div class="crsl-item">
+                <a href="images/veem-iphone-visual-voicemail-inbox.png" title="Inbox" rel="gallery1" class="swipebox"><img src="images/g13.png" alt="Veem Visual Voicemail Inbox"></a>
+            </div><!-- post #3 -->
+
+            <div class="crsl-item">
+                <a href="images/veem-iphone-visual-voicemail-add-title.png" title="Edit: Add Title" rel="gallery1" class="swipebox"><img src="images/g12.png" alt="Veem Visual Voicemail Edit: Add Title"></a>
+            </div><!-- post #2 -->
+            
+            <div class="crsl-item">
+                <a href="images/veem-iphone-visual-voicemail-trim.png" title="Edit: Trim or Bleep" rel="gallery1" class="swipebox"><img src="images/g14.png" alt="Veem Visual Voicemail Edit: Trim or Bleep"></a>
+            </div><!-- post #4 -->
+            <div class="crsl-item">
+                    <a href="images/veem-iphone-visual-voicemail-add-photo.png" title="Edit: Add a Photo" rel="gallery1" class="swipebox"><img src="images/g21.png" alt="Veem Visual Voicemail Edit: Add a Photo" /></a>
+            </div>
+                <div class="crsl-item">
+                    <a href="images/veem-iphone-visual-voicemail-share.png" title="Share" rel="gallery1" class="swipebox"><img src="images/g22.png" alt="Veem Visual Voicemail Share" /></a>
+                </div>
+                <div class="crsl-item">
+                    <a href="images/veem-iphone-visual-voicemail-save.png" title="Save" rel="gallery1" class="swipebox"><img src="images/g23.png" alg="Veem Visual Voicemail Save" /></a>
+                </div>
+   
+          </div><!-- @end .crsl-wrap -->
+    	</div><!-- @end .crsl-items -->
+        </div>
+        <nav class="slidernav">
+          <div id="navbtns2" class="clearfix">
+            <a href="#" class="previous">prev</a>
+            <a href="#" class="next">next</a>
+          </div>
+    	</nav>
+        <h2 class="section_title">Veem Smart Folders</h2>
+        <div id="ani2" class="crsl-items2">
+        	<div class="crsl-wrap2">
+            	<div class="crsl-item2">
+                    <a href="images/veem-iphone-visual-voicemail-folders-menu.png" class="swipebox" title="Folders" rel="gallery2"><img src="images/g31.png" alt="Veem Visual Voicemail Folders" /></a>
+                </div>
+                <div class="crsl-item2">
+                    <a href="images/veem-iphone-visual-voicemail-folders.png" class="swipebox" title="Sub-Categories" rel="gallery2"><img src="images/g32.png" alt="Veem Visual Voicemail Sub-Categories" /></a>
+                </div>
+                <div class="crsl-item2">
+                    <a href="images/veem-iphone-visual-voicemail-family.png" class="swipebox" title="Categories" rel="gallery2"><img src="images/g33.png" alt="Veem Visual Voicemail Categories" /></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <h2 class="section_title">Veem Social</h2>
+     	<div id="ani3" class="crsl-items2">
+              <div class="crsl-wrap2">
+                <div class="crsl-item2">
+                    <a href="images/veem-iphone-visual-voicemail-feed.png" class="swipebox" title="Feed" rel="gallery3"><img src="images/g34.png" alt="Veem Visual Voicemail Feed" /></a>
+                </div>
+                <div class="crsl-item2">
+                    <a href="images/veem-iphone-visual-voicemail-profile.png" class="swipebox" title="Profile" rel="gallery3"><img src="images/g24.png" alt="Veem Visual Voicemail Profile" /></a>
+                </div>
+                <div class="crsl-item2">
+                    <a href="images/veem-iphone-visual-voicemail-notifications.png" class="swipebox" title="Notifications" rel="gallery3"><img src="images/notification_small.png" alt="Veem Visual Voicemail Notifications" /></a>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pricing" class="sections">
+	<div class="header">
+    	<h1>Veem | Visual Voicemail | Pricing</h1>
+        <img src="images/arrow_bottom.svg" />
+    </div>
+    <div class="container">
+    	<h2 class="section_title">Give Veem App a try!</h2>
+        <ul class="pricing_boxes">
+        	<li>
+            	<div class="pricing_box">
+                	<h2>Non-Subscribers</h2>
+                    <h1 class="Veem Visual Voicemail price">
+                    	FREE
+                    </h1>
+                    <h6><img src="images/checkmark.svg" /><p>Free app download</p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Free Profile and feed access</p></h6>
+                </div>
+            </li>
+            <li>
+            	<div class="pricing_box active">
+                	<h2>Veem Subscribers</h2>
+                    <h1 class="price">
+                    	<span class="left">$</span>
+                        2
+                        <span class="right">/only</span>
+                    </h1>
+                    <h6><img src="images/checkmark.svg" /><p>Full account access</p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Automatic voicemail backup<span>*</span></p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Unlimited storage</p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Sharing features</p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>No Ads***for lifetime***</p></h6>
+                     <h6><img src="images/checkmark.svg" /><p>Available on Indiegogo only.</p></h6>
+                     <h5><span>*</span>one year only</h5>
+                </div>
+            </li>
+            <li>
+            	<div class="pricing_box">
+                	<h2>Auto-Subscribe</h2>
+                    <h1 class="price">
+                    	<span class="left">$</span>
+                        2
+                        <span class="right">/only</span>
+                    </h1>
+                    <!--<h6><img src="images/checkmark.svg" /><p>Save on your yearly subscription</p></h6>-->
+                    <h6><img src="images/checkmark.svg" /><p>Full account access</p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Automatic voicemail backup</p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Unlimited storage </p></h6>
+                    <h6><img src="images/checkmark.svg" /><p>Sharing features</p></h6>
+                    <!--<h6><img src="images/checkmark.svg" /><p>No Ads</p></h6>-->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h5><span>*</span>$3 Yearly renewal plan</h5>
+                </div>
+            </li>
+        </ul>
+        <div class="space30"></div>
+    </div>
+</div>
+<div class="footer">
+
+<!-- Twitter API Widget -->
+<div class="goveem">
+        <div class="twitter_feed">
+
+            <a class="twitter-timeline" href="https://twitter.com/TheVeemApp" data-widget-id="549621698371145728" width="250" height="500" data-chrome="nofooter noborders" data-link-color="#FF3A32">Tweets by @TheVeemApp</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+        </div>
+
+<!-- Twitter #GoVeem Feed 
+    <div class="goveem">
+        <div class="twitter_feed">
+
+            <a class="twitter-timeline" href="https://twitter.com/hashtag/GoVeem" data-widget-id="543108273830756352" width="250" height="500" data-chrome="nofooter noborders" data-link-color="#FF3A32">#GoVeem Visual_Voicemail_for_iPhone</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+            </div>
+        </div>-->
+
+<!-- Twitter Feed-->
+
+	<h3><i>The Veem App is currently under development</i></h3>
+    <div class="signup" style="width:50%;margin-auto;">
+    	<h6>Sign up to join our Beta!</h6>
+
+
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css" />
+    <style>
+    #signupform {
+    }
+    #signupform label.error{
+      /*position:absolute;
+      top:52px;*/
+      display:block;
+      color:#FFFFFF;
+    }
+    #signupform .formrow{
+      padding-bottom: 18px;
+      width:100%;
+    }
+    #signupform input, #signupform select{
+      width:100%;
+      box-sizing: border-box;
+      padding: 10px 20px;
+      float: none;
+      border-radius: 4px;
+      height: 50px;
+    }
+    #signupform select{
+    }
+
+      /* Styles for dialog window */
+      #signup-success-popup {
+        background: white;
+        padding: 20px 30px;
+        text-align: left;
+        max-width: 500px;
+        margin: 40px auto;
+        position: relative;
+      }
+
+      /**
+       * Fade-zoom animation for first dialog
+       */
+      
+      /* start state */
+      .my-mfp-zoom-in .zoom-anim-dialog {
+        opacity: 0;
+
+        -webkit-transition: all 0.2s ease-in-out; 
+        -moz-transition: all 0.2s ease-in-out; 
+        -o-transition: all 0.2s ease-in-out; 
+        transition: all 0.2s ease-in-out; 
+
+
+
+        -webkit-transform: scale(0.8); 
+        -moz-transform: scale(0.8); 
+        -ms-transform: scale(0.8); 
+        -o-transform: scale(0.8); 
+        transform: scale(0.8); 
+      }
+
+      /* animate in */
+      .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+        opacity: 1;
+
+        -webkit-transform: scale(1); 
+        -moz-transform: scale(1); 
+        -ms-transform: scale(1); 
+        -o-transform: scale(1); 
+        transform: scale(1); 
+      }
+
+      /* animate out */
+      .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+        -webkit-transform: scale(0.8); 
+        -moz-transform: scale(0.8); 
+        -ms-transform: scale(0.8); 
+        -o-transform: scale(0.8); 
+        transform: scale(0.8); 
+
+        opacity: 0;
+      }
+
+      /* Dark overlay, start state */
+      .my-mfp-zoom-in.mfp-bg {
+        opacity: 0.001; /* Chrome opacity transition bug */
+        -webkit-transition: opacity 0.3s ease-out; 
+        -moz-transition: opacity 0.3s ease-out; 
+        -o-transition: opacity 0.3s ease-out; 
+        transition: opacity 0.3s ease-out;
+      }
+      /* animate in */
+      .my-mfp-zoom-in.mfp-ready.mfp-bg {
+        opacity: 0.8;
+      }
+      /* animate out */
+      .my-mfp-zoom-in.mfp-removing.mfp-bg {
+        opacity: 0;
+      }
+    </style>
+    <form method="POST" action="process-form.php" id="signupform">
+    <div class="">
+      <div class="formrow">
+         <input type="text" name="name" id="name" class="required" placeholder="Your Name" style="">
+      </div>
+      <div class="formrow">
+         <select name="carrier" class="required" style="">
+          <option value="">Mobile Carrier</option>
+          <option value="AT&amp;T">AT&amp;T</option>
+          <option value="Verizon">Verizon</option>
+          <option value="T-Mobile">T-Mobile</option>
+          <option value="Sprint">Sprint</option>
+          <option value="Other">Other</option>
+         </select>
+      </div>
+      <div class="formrow">
+        <div class="" style="width:65%;display: inline-block;float:left;">
+         <input type="text" class="required email" name="email" placeholder="Your Email" style="border-top-right-radius: 0; border-bottom-right-radius:0;">
+        </div>
+        <div class="" style="width:35%;display: inline-block;float:left;">
+          <input type="submit" value="Sign Me Up" name="Submit" class="button postfix">
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+    </form>
+      <div style="display:none;" id="sentmessage" class="medium-8 large-6 small-centered columns">
+        <div class="row collapse" style="height:70px;">
+          <div class="small-12 columns">
+            <h2 style="font-weight:bold;color:#FFF;">Signup Completed</h2>           
+          </div>
+        </div>
+      </div>
+      <div id="signup-success-popup" class="zoom-anim-dialog mfp-hide">
+        <h1 style="font-size: 30px;">Veemtastic! We'll contact you about your Voicemail</h1>
+        <p>Let your friends and family know that sharing, keeping and better managing your voicemails with your iPhone is now possible. <br /><b>Thank you!</b> </p>
+      </div>
+<script>
+$(function() {
+  $( "#signupform" ).validate({
+    submitHandler: function (form) {
+      $.ajax({
+        type: $(form).attr('method'),
+        url: $(form).attr('action'),
+        data: $(form).serialize(),
+        dataType : 'json'
+      }).done(function (response) {
+        if (response.success == 'success') {               
+          // Show popup
+          $.magnificPopup.open({
+            items: {
+              src: '#signup-success-popup',
+              type: 'inline'
+            }
+          });
+          $( "#signupform" ).hide();
+          $( "#sentmessage" ).show();
+        } else {
+        }
+      });
+      return false;
+    }
+  });
+});
+</script>
+   </div>
+
+
+
+<!--    
+    <a href="https://twitter.com/goveem" target="_blank"class="twitter"><img src="images/twitter_icon.svg" /></a>
+-->
+  <!-- NDB - Sliding Door Social icons -->
+
+	<style>
+
+			.image-overlay{
+					margin: 30px auto;
+					position: relative;
+					width: 300px;
+					height: 100px;
+					background-color: transparent;
+					overflow: hidden;
+					z-index: 20;
+					margin-bottom:60px;
+					border-radius: 6px;
+			}
+
+
+			.image-effect-doors{
+			}
+                        .image-effect-doors image-left, .image-effect-doors image-right{
+                          display:none;
+                        }
+			
+			.share-button{
+					display: inline-block;
+					text-decoration: none;
+					color: #ffffff;
+					padding: 5px;
+					width: 40px;
+					border-radius: 2px;
+					margin: 20px 6px;
+				box-shadow: 0 0 2px 2px rgba(255,255,255,0.8);
+			}
+			.share-button img{
+					width:30px;
+					height:30px;
+			}
+
+			.share-via-facebook{
+					background-color:#3b5998;
+			}
+
+			.share-via-twitter{
+					background-color:#00aced;
+			}
+
+			.share-via-google{
+					background-color:#d34836;
+			}
+                        .share-via-youtube{
+                                        background-color:#d34836;
+                        }
+
+
+	@media (min-width:700px){	
+		.image-overlay{
+			margin: 30px auto;
+			position: relative;
+			width: 650px;
+			height:200px;
+			background-color: transparent;
+			overflow: hidden;
+			z-index: 20;
+		}
+
+
+		.image-effect-doors{
+			width: 500px;
+			height: 200px;
+			position: relative;
+			margin: 0 auto;
+			background-color: #fff;
+		}
+
+
+		.image-effect-doors .image-left,
+		.image-effect-doors .image-right{
+			display: inline-block;
+			position: absolute;
+			width: 250px;
+			height: 200px;
+			overflow: hidden;
+			transition:  0.4s ease;
+			z-index: 10;
+		}
+
+
+		.image-effect-doors .image-left{
+			left: 0;
+			top:0;
+		}
+
+		.image-effect-doors:hover .image-left{
+			opacity: 0.4;
+			transform: translateX(-250px);
+			-webkit-transform: translateX(-250px);
+		}
+
+
+		.image-effect-doors .image-right{
+			left:250px;
+			top: 0;
+		}
+
+		.image-effect-doors:hover .image-right{
+			opacity: 0.4;
+			transform: translateX(250px);
+			-webkit-transform: translateX(250px);
+		}
+
+		.image-effect-doors .image-right img{
+			margin-left: -250px;
+		}
+
+		.share-button{
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			padding: 12px;
+			width: 80px;
+			border-radius: 2px;
+			margin:	50px 4px;
+		}
+		.share-button img{
+			width:80px;
+			height:80px;
+		}
+        
+        @media screen and (max-width : 767px){
+        
+        #animation {padding-left: 0}
+        }
+
+	}
+	</style>
+	<div class="image-overlay">
+		<div class="image-effect-doors">
+			<a href="https://www.facebook.com/TheVeemApp" target="_blank" class="share-button" style="margin-left:-20px;">
+                          <img src="images/Facebok.png" />
+			</a>
+
+			<a href="https://twitter.com/TheVeemApp"  target="_blank" class="share-button">
+       	       	       	  <img src="images/Twitter.png" />
+			</a>
+
+			<a href="http://www.instagram.com/TheVeemApp" class="share-button" target="_blank">
+                          <img src="images/Instagram.png" />
+			</a>
+
+                        <a href="http://theveemapp.tumblr.com" class="share-button" target="_blank">
+                          <img src="images/tumblr.png" />
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCTKpoKaI2ritIx777a0_NHg" class="share-button" target="_blank">
+                          <img src="images/youtube_icon.png" />
+                        </a>
+
+			<div class="image-left">
+				<img src="images/doors.png" width="500" alt="Veem Visual Voicemail Social Links">
+			</div>
+			<div class="image-right">
+				<img src="images/doors.png" width="500" alt="Veem Visual Voicemail Social Links">
+			</div>
+		</div>
+	</div>
+  <!-- NDB - End Sliding Door Social icons -->
+
+	<div class="footer_bottom">
+    	<div class="container">
+            <p>&copy; 2014 Veem, Inc | Made with &#9829; In Santa Monica, California</p>
+            <ul>
+                <!--<li><a href="about.html">About</a></li>-->
+                <li><a href="http://theveemapp.tumblr.com"target="_blank">Blog</a></li>
+                <li><a href="mailto:david@veem.it">Contact Us</a></li>
+                <li><a href="http://www.google.com/patents/US20140128039" target="_blank">Patent #14074851</a></a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $('#slider1').carousel({
+    visible: 3,
+    itemMinWidth: 100,
+    itemEqualHeight: 370,
+    itemMargin: 0,
+  });
+  
+  $("a[href=#]").on('click', function(e) {
+    e.preventDefault();
+  });
+});
+</script>
+</body>
+</html>

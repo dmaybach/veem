@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="308px" height="626px" viewBox="0 0 308 626" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhone 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M309,175.443626 L309,579.599697 C309,604.089933 289.153318,623.923812 264.671196,623.923812 L49.4503513,623.923812 C24.971918,623.923812 5.12154696,604.07923 5.12154696,579.599697 L5.12154696,44.3241151 C5.12154696,19.8338785 24.9682287,0 49.4503513,0 L264.671196,0 C289.149629,0 309,19.8445823 309,44.3241151 L309,129.698745 C308.791321,129.608171 308.560502,129.55795 308.317085,129.55795 C307.374235,129.55795 306.609903,130.318436 306.609903,131.264442 L306.609903,173.878625 C306.609903,174.821094 307.367661,175.585116 308.317085,175.585116 C308.559899,175.585116 308.790872,175.534679 309,175.443626 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="FEATURES" sketch:type="MSLayerGroup" transform="translate(-675.000000, -320.000000)" stroke-width="1.70470987">
+            <g id="iPhone-6" transform="translate(673.000000, 321.000000)">
+                <ellipse id="Oval-6" stroke="#FF3932" sketch:type="MSShapeGroup" cx="109.259669" cy="35.7989072" rx="5.12154696" ry="5.11412961"></ellipse>
+                <g id="Rectangle-5">
+                    <use stroke="#A5A5A5" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use stroke="#FF3932" xlink:href="#path-1"></use>
+                </g>
+                <path d="M3.41133496,130.402502 L3.41133504,177.289826" id="Line" stroke="#FF3932" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M4.2679558,75.7593121 L4.2679558,99.8258044" id="Line" stroke="#FF3932" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M3.41056754,185.830423 L3.41056754,233.40319" id="Line" stroke="#FF3932" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <ellipse id="Oval-5" stroke="#FF3932" sketch:type="MSShapeGroup" cx="157.060773" cy="15.3423888" rx="3.41436464" ry="3.40941974"></ellipse>
+                <rect id="Rectangle-8" stroke="#554C4C" sketch:type="MSShapeGroup" x="23.9005525" y="69.8931046" width="266.320442" height="473.909343" rx="3.40941974"></rect>
+                <ellipse id="Oval-7" stroke="#FF3932" sketch:type="MSShapeGroup" cx="157.060773" cy="579.601355" rx="20.4861878" ry="20.4565184"></ellipse>
+                <ellipse id="Oval-8" stroke="#FF3932" sketch:type="MSShapeGroup" cx="157.060773" cy="579.601355" rx="23.9005525" ry="23.8659382"></ellipse>
+                <path d="M182.668508,35.4579653 C182.668508,33.7634837 181.004006,32.3894875 178.951256,32.3894875 L135.170291,32.3894875 C133.117128,32.3894875 131.453039,33.7634837 131.453039,35.4579653 L131.453039,36.1398492 C131.453039,37.8343308 133.117128,39.208327 135.170291,39.208327 L178.951256,39.208327 C181.004006,39.208327 182.668508,37.8343308 182.668508,36.1398492 L182.668508,35.4579653 L182.668508,35.4579653 L182.668508,35.4579653 L182.668508,35.4579653 Z" id="old-hueco" stroke="#FF3A32" opacity="0.935284515" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

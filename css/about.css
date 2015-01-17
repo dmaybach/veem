@@ -1,0 +1,232 @@
+@font-face {
+        font-family: '616';
+        src: url('../font/616.eot');
+        src: local('616'), url('../font/616.woff') format('woff'), url('../font/616.ttf') format('truetype');
+}
+@font-face {
+                font-family: 'MyriadProRegular';
+                src: url('../font/myriadpro-regular.eot');
+                src: url('../font/myriadpro-regular.eot') format('embedded-opentype'),
+                         url('../font/myriadpro-regular.woff') format('woff'),
+                         url('../font/myriadpro-regular.ttf') format('truetype'),
+                         url('../font/myriadpro-regular.svg#MyriadProRegular') format('svg');
+}
+*{font-family: '616';}
+body{
+  margin: 0;
+  padding: 0;
+  color: #2f3238;
+}
+#nav_content{
+  width: 1247px;
+  height: 100px;
+  margin: auto;
+  text-align:center;
+}
+#nav_content ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float:right;
+}
+#nav_content ul li{
+  float: left;
+}
+#nav_content ul li a{
+  display: block;
+  width: 120px;
+  color: #FFF;
+  font-weight: bold;
+  text-align:center;
+  text-decoration:none;
+  font-size: 20px;
+  line-height: 100px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+#nav_content ul li a.noshadow{
+  text-shadow: none;
+}
+#nav_content ul li a span{
+  background-color: #ee2277;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+#nav_content h1{
+  font-size: 26px;
+  font-weight: bold;
+  color:#FFF;
+  margin:0;
+  padding:0;
+  float:left;
+  line-height: 100px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+#nav_content .logo{
+  width: 120px;
+  height: 120px;
+  border-radius: 23%;
+  overflow: hidden;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+#nav_content .logo img{
+  width: 120px;
+  height: 120px;
+}
+#header_nav{
+  width: 100%;
+  height: 482px;
+  background: url(../images/santa_monica_pic_new.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.7);
+  z-index: 9999;
+}
+#header_nav #headertext{
+  padding-top: 100px;
+  width: 100%;
+  text-align:center;
+  font-size: 48px;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 60px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.78);
+}
+.content_wrap{
+  width: 1247px;
+  margin: 50px auto;
+}
+h1{
+  color: #e92330;
+  font-size: 26px;
+  font-weight: bold;
+  text-align:center;
+}
+.about_col{
+  width: 33%;
+  float:left;
+  text-align:center;
+  color:#000;
+  font-size: 16px;
+}
+.about_col img{
+  width: 60%;
+  height: auto;
+}
+.about_col h2{
+  font-size: 20px;
+}
+.cursive{
+  font-family: 'Dancing Script', cursive;
+}
+.cursive.lger{
+  font-size:120%;
+}
+.half_col{
+  width:50%;
+  float:left;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+ul.footerlinks{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.footerlinks li{
+  display:inline;
+  padding: 1px 10px;
+}
+ul.footerlinks li a{
+  color: #FFF;
+  text-decoration:none;
+}
+@media screen and  (max-width:1200px){
+  .content_wrap{
+    width: 90%;
+  }
+  #nav_content{
+    width: 90%;
+  }
+  #header_nav{
+    
+  }
+}
+@media screen and  (max-width:800px){
+  #nav_content .logo{
+    width: 80px;
+    height: 80px;
+    margin:0;
+    left: 10px;
+    top: 10px;
+  }
+  #nav_content h1{
+    display:none;
+  }
+  #nav_content .logo img{
+    width:80px;
+    height:80px;
+  }
+  #header_nav{
+    height:100px !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+  }
+  #contentPadder{
+    height: 120px !important;
+  }
+}
+@media screen and  (max-width:700px){
+.about_col{
+  width:100%;
+  padding-bottom: 20px;
+}
+.about_col img{
+  width: 30%;
+}
+.half_col{
+  width: 100%;
+}
+.footer div{
+  float:none !important;
+  text-align:center;
+}
+.utildiv {
+  position: relative;
+  height: 620px;
+}
+.utildiv.extralong{
+  height: 740px;
+}
+.utildiv .imgdiv{
+  position:absolute;
+  height:250px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align:center;
+}
+.utildiv .imgdiv img{
+  width: 250px !important;
+}
+.utildiv .textdiv{
+  position:absolute;
+  top: 260px;
+  left: 0;
+  width: 100%;
+/*  text-align:center;*/
+}
+#yellowBottom{
+
+}
+#yellowContent{
+  overflow:hidden;
+}
+
+}

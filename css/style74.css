@@ -644,13 +644,14 @@ iframe.video_frame{height:355px;}
 }
 
 #animation {
-padding-left: 32%;
+		padding-left: 32%;
 }
+
 #animation {
-max-width: 800px; 
-margin: 0 auto;
+		max-width: 800px; 
+		margin: 0 auto;
 }
 
-
-	}
-	
+#twitter-widget-0 { 
+    width: 100% !important; 
+}

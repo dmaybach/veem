@@ -23,8 +23,61 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <!-- Testimonial CSS -->
+
+    <link rel='stylesheet' id='blox-style-css'  href='http://www.robpercival.co.uk/wp-content/themes/robpercival/style.css?ver=3.8.5' type='text/css' media='all' />  
+
+    <!-- Testimonical CSS -->
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-content/themes/robpercival/js/superfish.js?ver=1.7.4'></script>
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-content/themes/robpercival/js/jquery.imagesloaded.min.js?ver=2.0.1'></script>
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-content/themes/robpercival/js/jquery.jplayer.min.js?ver=2.2.0'></script>
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-content/themes/robpercival/js/jquery.fitvids.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://www.robpercival.co.uk/wp-content/themes/robpercival/js/jquery.flexslider-min.js?ver=2.1'></script>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- Testimonical JS -->
+
+    <script type="text/javascript">
+
+jQuery( document ).ready(function($) {
+
+  var testimonialCount = $('.testimonial').length;
+  var currentTestimonial = Math.floor(Math.random() * testimonialCount);
+  
+  $('.testimonial').hide().eq(currentTestimonial).show();
+  
+  setInterval(function() {
+    
+    $('.testimonial').eq(currentTestimonial).fadeToggle('fast', function() {
+    
+      if (currentTestimonial == (testimonialCount - 1)) {
+      
+        currentTestimonial = 0; 
+      
+      } else {
+        
+        currentTestimonial++;
+      
+      }
+      
+      $('.testimonial').eq(currentTestimonial).fadeToggle();
+      var testimonialHeight = $('.testimonial').eq(currentTestimonial).outerHeight();
+      
+      $('.testimonial-container').animate({
+        height: testimonialHeight + "px"
+      }, 500);
+    
+    });
+    
+  }, 6000);
+
+});
+</script>
+
+
+
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,6 +85,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  
+
   </head>
 
   <body>
@@ -112,6 +167,43 @@
           </div>
         </div> <!-- /container -->
      
+
+<style type="text/css">
+
+  .testimonial {
+    display: none;
+  }
+
+</style>
+
+
+<div class="testimonial-container">
+
+
+
+  <blockquote class="testimonial" id="testimonial1" style="display: block;">I also wanted to commend you on your innovative idea about this, because Veem would have been great to have with my family, since we have lost so many that we love within the last 2 years.  It would have been nice to keep there voicemails, so we could hear their voices again."
+    <cite>— CMD.</cite>
+  </blockquote>
+  
+  <blockquote class="testimonial" id="testimonial2">
+    You know, just the other day, I had a voice mail deleted from my phone and it was from my best friend who lives in Ireland. I was so upset, and I just thought to myself. Ok. I am totally on board with Veem. I now have proof that such an app would be revolutionary. 
+  
+    <cite>— Dominique.</cite>
+  </blockquote>
+  
+  <blockquote class="testimonial" id="testimonial3">
+    I save my voicemails like from ex boyfriends being crazy or like from family members on my birthday...they usually leave singing messages.  
+  
+    <cite>— Rachel.</cite>
+  </blockquote>
+  
+  <blockquote class="testimonial" id="testimonial4">
+    I loved hearing that message and I don’t have it anymore and that’s why would be so awesome about having Veem!  
+  
+    <cite>— Chelsea Cowan.</cite>
+  </blockquote>
+  
+</div> 
 
       <footer>
         <div class="container">

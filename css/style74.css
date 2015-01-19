@@ -132,11 +132,12 @@ ul.pricing_boxes li .pricing_box{background:#f4f4f4; padding-bottom:10px;overflo
 .footer .signup #signupform input[type="submit"]{border-radius:0 !important;}
 .footer .signup input[type="submit"]:hover{background:#161616;}
 a.twitter{margin-bottom:40px; display:inline-block;}
-.footer_bottom{background:#eb2439; padding:12px 0;}
-.footer_bottom p{font-size:13px; color:#FFFFFF; float:left; margin:0; line-height:22px;}
-.footer_bottom ul{float:right;}
+
+.footer_bottom{background:#eb2439; padding:25px 0 20px;}
+.footer_bottom p{font-size:13px; color:#FFFFFF; float:left; margin:0; line-height:22px;padding: 10px;}
+.footer_bottom ul{float:right;padding: 10px;}
 .footer_bottom ul li {display:inline-block; margin-left:20px;}
-.footer_bottom ul li a{font-size:13px; color:#FFFFFF;}
+.footer_bottom ul li a{font-size:13px; color:#FFFFFF;font-family: 'Roboto', serif;font-weight: 500;}
 
 .crsl-items .crsl-item,.crsl-items2 .crsl-item2{display:block; float:left; width:184px;  padding:5px; }
 .crsl-items2{

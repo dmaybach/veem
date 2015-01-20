@@ -39,6 +39,7 @@ footer .container ul li a{font-size:13px; color:#FFFFFF;font-family: 'Roboto', s
 	margin-top: 0px;
 	margin-bottom: 50px;
 	text-shadow: 0 0 6px rgba(0,0,0,0.78);
+	padding-top: 60px;
 }
 .jumbotron p{
 	margin-bottom: 30px;
@@ -132,7 +133,7 @@ margin-top: 15px;
 	.jumbotron h1{
 		font-size: 31px;
 		margin-bottom: 30px;
-		padding-top: 55px; 
+		padding-top: 140px; 
 	}
 
 	.jumbotron p{
@@ -155,7 +156,7 @@ margin-top: 15px;
 		margin-right: -1px;
 		margin-left: -24px;
 		font-size: 17px;
-		padding-left: 215px;
+		padding-left: 50px;
 		float: none;
 	}
 	#vision .col-md-4{

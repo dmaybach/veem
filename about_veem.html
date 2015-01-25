@@ -82,6 +82,30 @@ jQuery( document ).ready(function($) {
 });
 </script>
 
+   <!--smooth scrolling-->
+    <!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+  
+  <script type="text/javascript">
+
+
+ $(document).ready(function()
+    {
+        // Scroll the whole document
+        $('#about').localScroll({
+           target:'#content'
+        });
+    });
+</script>
+
+  </script>
 
 
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -93,9 +117,12 @@ jQuery( document ).ready(function($) {
     <![endif]-->
     
     <script src="//load.sumome.com/" data-sumo-site-id="a5382f18471bde809c4c5d10609fa913e0d33d4acfe322baf8b200ddd368be3c" async></script>
+
   </head>
 
   <body>
+
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -110,6 +137,7 @@ jQuery( document ).ready(function($) {
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="#mission">MISSION</a></li>
             <li><a href="#vision">VISION</a></li>
             <li><a href="#dm">ONE MORE THING!</a></li>
@@ -121,13 +149,22 @@ jQuery( document ).ready(function($) {
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Our Goal is to give<br>iOS mobile users<br>the best visual voicemail app</h1>
-        <p>Since the world embraced cell phones, voicemail took answering machines. No longer could we truly save our messages from friends, family, loved ones, or mysterious strangers. The fate of those memories, moments, and voices are now locked up in some remote hard drive, like a ticking time bomb, ready to destruct.</p>
+        <h1>Our Goal is to give<br>iOS mobile users<br>a long term visual voicemail app</h1><br> <h2>&quot;Not something that comes and goes.&quot;</h2>
+        <p></p>
         <p>
           <a class="btn btn-danger btn-lg" href="http://igg.me/at/veem" role="button" style="text-shadow: none; ">Buy Now on Indiegogo</a>
         </p>
       </div>
     </div>
+
+    <div id="about">
+       <div class="container homepage">
+          <h2>ABOUT</h2>
+          <hr>
+          <p>Since the world embraced cell phones, voicemail took answering machines. No longer could we truly save our messages from friends, family, loved ones, or mysterious strangers. The fate of those memories, moments, and voices are now locked up in some remote hard drive, like a ticking time bomb, ready to destruct.</p>
+      </div>
+     </div>  
+
       <div id="mission">
        <div class="container homepage">
           <h2>MISSION</h2>
@@ -242,10 +279,10 @@ jQuery( document ).ready(function($) {
             <div class="row">
               <ul>
               	<li>
-                <a href="http://www.builtinla.com/2015/01/13/veem">&quot;Is voice mail dead? Veem doesn't think so</a></i>
-                	<li>
-                <a href="http://startupdope.com/veemreview/" style="padding-top: 10px">&quot;Is Voicemails - Back in Town!!&quot;</a>
-               </i>
+                <a href="http://www.builtinla.com/2015/01/13/veem">BUILT IN LA<br>&quot;Is voice mail dead? Veem doesn't think so&quot; <i class="fa fa-twitch fa-2x"></i></a></i>
+                	<li style="padding-top: 24px">
+                <a href="http://startupdope.com/veemreview/" style="padding-top: 20px">Startup Dope<br>&quot;Voicemails - Back in Town!!&quot; <i class="fa fa-twitch fa-2x"></i></a>
+               </li>
               </ul>
                 </div>
               </div>

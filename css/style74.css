@@ -35,14 +35,14 @@ a{text-decoration:none;}
 .container{width:100%; padding:0 15px; overflow:hidden;}
 .go_top{position:fixed; bottom:50px; right:15px; cursor:pointer; display:none; z-index:997;}
 
-.logo{position:absolute; left:21%; top:30px; z-index:998; width:130px; border-radius:23%; overflow:hidden;}
+.logo{position:absolute; left:21%; top:60px; z-index:998; width:130px; border-radius:23%; overflow:hidden;}
 .logo img{max-width:100%; position:relative; z-index:998; width:100%; border-radius:23%;}
 
 
 .hamburger{position: fixed;right: 21%;top: 22px; cursor:pointer; z-index:999;}
 .hemburger_content{width: 70px; position:relative;}
 #hemburger_img{width:100%;}
-.hemburger_content img{ position: relative; z-index: 9999999; top:3px; }
+.hemburger_content img{ position: relative; z-index: 9999999; top:20px; }
 .hemburger_content .menu{position:absolute; top:58px; text-align:center; width:185px; right:-58px; display:none;}
 .hemburger_content .menu ul{background:#9caccb;   position: relative; z-index: 999; border-radius:6px; overflow:hidden; box-shadow:0px 2px 3px rgba(0,0,0,0.6); }
 .hemburger_content .menu ul li{display:block;  text-align:left;}
@@ -56,6 +56,8 @@ a{text-decoration:none;}
 }
 .header{height:100px; background:#2f3238; border-bottom:1px solid #12151c; border-top:1px solid #3a3c42; text-align:center; }
 .header h1{color:#FFFFFF; font-size:25px; font-weight:200;  padding:6px 0; text-shadow:1px 1px 1px rgba(0,0,0,1);}
+.header h2 a{font-size: 15px;font-family: 'Roboto';}
+
 .site-name{padding-left:32%;}
 .site-name h1{font-weight:bold; color:#ea2331; padding:5px 0;font-size: 35px;}
 .site-name h2{color:#2f3238; font-weight:200; font-size:25px; }

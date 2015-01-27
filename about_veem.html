@@ -45,9 +45,9 @@
     
     <!-- Testimonical JS -->
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
-jQuery( document ).ready(function($) {
+  jQuery( document ).ready(function($) {
 
   var testimonialCount = $('.testimonial').length;
   var currentTestimonial = Math.floor(Math.random() * testimonialCount);
@@ -79,50 +79,59 @@ jQuery( document ).ready(function($) {
     
   }, 10000);
 
-});
+  });
 </script>
 
-   <!--smooth scrolling-->
-    <!-- Load jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
-<!-- Load ScrollTo -->
-<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
-
-<!-- Load LocalScroll -->
-<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
-
+   <!-- Smooth Scrolling -->
   
-  <script type="text/javascript">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
+  <!-- Load Smooth Scrolling jQuery func -->
 
- $(document).ready(function()
-    {
-        // Scroll the whole document
-        $('#about').localScroll({
-           target:'#content'
-        });
+    <script type="text/javascript">
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
     });
-</script>
+  });
 
-  </script>
+    </script>
 
+ <!-- go_top JS func -->
 
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script type="text/javascript">
+    $(function() {
+      if($(window).scrollTop() > 10){
+        $(".go_top").fadeIn();
+      }
+      else{
+        $(".go_top").fadeOut();
+      }
+    });
+    </script>
+    
+   <!-- Sumo me -->
     
     <script src="//load.sumome.com/" data-sumo-site-id="a5382f18471bde809c4c5d10609fa913e0d33d4acfe322baf8b200ddd368be3c" async></script>
+
+  
 
   </head>
 
   <body>
-
-
+<div class="overlay"><div class="overlay_box"><a class="close" href="#">x</a><div class="img"></div></div></div>
+<div class="go_top"><img src="images/go_top.svg" /></div>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -140,13 +149,13 @@ jQuery( document ).ready(function($) {
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#mission">MISSION</a></li>
             <li><a href="#vision">VISION</a></li>
-            <li><a href="#dm">ONE MORE THING!</a></li>
+            <li><a href="#onemorething">ONE MORE THING!</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Main jumbotron  -->
     <div class="jumbotron">
       <div class="container">
         <h1>Our Goal is to give<br>iOS mobile users<br>a long term visual voicemail app</h1><br> <h2>&quot;Not something that comes and goes.&quot;</h2>
@@ -159,6 +168,8 @@ jQuery( document ).ready(function($) {
 
     <div id="about">
        <div class="container homepage">
+          <br>
+          <br>
           <h2>ABOUT</h2>
           <hr>
           <p>Since the world embraced cell phones, voicemail took answering machines. No longer could we truly save our messages from friends, family, loved ones, or mysterious strangers. The fate of those memories, moments, and voices are now locked up in some remote hard drive, like a ticking time bomb, ready to destruct.</p>
@@ -247,8 +258,10 @@ jQuery( document ).ready(function($) {
 
 
 
-<section id="dm">
+<section id="onemorething">
    <div class="container homepage">
+          <br>
+          <br>
           <h2>One more thing!</h2>
           <hr></div>
         <div class="container">

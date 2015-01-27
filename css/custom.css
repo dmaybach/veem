@@ -130,7 +130,8 @@ margin-top: 15px;
 	padding-bottom: 0px;
 }
 
-.head 
+
+.go_top{position:fixed; bottom:81px; right:15px; cursor:pointer; display:none; z-index:997;}
 /*responsiveness below for large width (tablet) 1200px */
 
 @media (max-width: 1199px) { 

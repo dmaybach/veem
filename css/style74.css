@@ -33,7 +33,7 @@ a{text-decoration:none;}
 .container60 {width:100%; padding:0 14%; overflow:hidden;position: relative;left: 0px}/*added to center iphone*/
 
 .container{width:100%; padding:0 15px; overflow:hidden;}
-.go_top{position:fixed; bottom:50px; right:15px; cursor:pointer; display:none; z-index:997;}
+.go_top{position:fixed; bottom:81px; right:15px; cursor:pointer; display:none; z-index:999;}
 
 .logo{position:absolute; left:21%; top:60px; z-index:998; width:130px; border-radius:23%; overflow:hidden;}
 .logo img{max-width:100%; position:relative; z-index:998; width:100%; border-radius:23%;}

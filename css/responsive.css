@@ -1,0 +1,19 @@
+/* Modified CSS */
+
+@media only screen and (min-width:725px) and (max-width: 1399px) {
+
+.footer .signup {margin-left:350px!important;}
+}
+
+@media only screen and (min-width:651px) and (max-width: 724px) {
+
+.twitter_feed {margin: 0 auto 0 15px;width: 95%;}
+.footer .signup {width:90%!important;margin:530px auto 55px!important;}
+}
+
+@media only screen and (max-width: 650px) {
+
+.twitter_feed {margin: 0 auto 0 15px;width: 95%;}
+.footer .signup {width:90%!important;margin:530px auto 55px!important;}
+}
+
